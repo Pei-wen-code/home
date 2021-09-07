@@ -1,8 +1,275 @@
 <!DOCTYPE html>
 <html>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css"/>
     <title>Peiwen Luo</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+</head>
 
-    <body>hello world</body>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#home">
+                <img id="logo" src="logo_size_invert.jpg"></img>
+            </a>
+            <div class="navbar">
+                <ul class="navbar__list hide">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#featuredprojects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="resume" href="resumeP.pdf">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="hamburger__lines"></div>
+        </div>
+        <div class="hamburger__filter"></div>
+    </nav>
+
+    <section class="banner" id="home">
+        <div class="banner__hero">
+            <h1>Hi, I am Pei, a web developer. </h1>
+            <h2>I enjoy creating human-centered digital experience for people.</h2>
+            <a href="mailto:contact@peiwenluobo.tw">Get in touch!</a>
+        </div>
+    </section>
+
+    <div class="socialmedia">
+        <img class="socialmedia__control hide" src="share.svg">
+
+        <a href="https://github.com/Pei-wen-code">
+            <img class="socialmedia__icon" src="github.svg">
+        </a>
+
+        <a href="https://www.linkedin.com/in/peiwen-luo18/">
+            <img class="socialmedia__icon" src="linkedin.svg"> 
+        </a>
+
+        <a href="https://www.facebook.com/Donna.Luo">
+            <img class="socialmedia__icon" src="facebook.svg">
+        </a>
+
+        <a href="https://twitter.com/Peiwen17544152">
+            <img class="socialmedia__icon" src="twitter.svg">
+        </a>
+    </div>
+
+    <section class="main">
+        <div class="content">
+            <div class="content__container" id="about">
+                <div class="reveal">
+                    <h2>About me</h2>
+                    <p>Hi, I am Pei, a web developer with a passion for coding and embrace challenges.</p>
+                    <p>
+                        My background is in applied linguistics working in education and I enjoy using educational technology to facilitate learning. 
+                        It turns out that I am passionate in coding and I am excited to work in an awesome company where I can contribute in a meaningful way 
+                        and work with other creatives to make people's life easier. I enjoy creating websites using <span>React, JavaScript, HTML5, CSS3</span> 
+                        together with <span>Node.js</span> as back-end, <span>Express</span> and <span>SQL</span> as database. I love React as its concept is cool and that is also 
+                        what I have been working with recently. 
+                    </p>
+                    <p>When I am not coding, I enjoy swimming, reading and trying out new recipe. Sometimes I play ukulele and if I am near the beach, I go surfing.</p>
+                    <p>I am looking for an opportunity where I can grow into a <span>full-stack role</span>.</p>
+                </div>
+            </div>
+
+            <div class="content__container" id="featuredprojects">
+                <div class="content__container-project reveal">
+                    <h2>Featured Project</h2>
+                    <div class="project">
+                        <div class="project__text">
+                            <div class="project__text__paragraph">
+                                <h3>Restaurant booking system</h3>
+                                <p>This is a website for booking a table in a restaurent. Customers can register, login and logout.
+                                    They can pay to secure their bookings as well. 
+                                    Restaurent owners can also check, edit, delete exsisting bookings and edit their menu.
+                                </p>
+                            </div>
+                            <ul class="project__text__language">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>Sequelize</li>
+                                <li>Stripe</li>
+                                <li>Cloudinary</li>
+                            </ul>
+                            <div class="project__external-link">
+                                <a href="https://github.com/Pei-wen-code/react_restaurant">
+                                    <img src="githubR.png" >
+                                </a>
+                                <a href="https://reactrestaurantfn.herokuapp.com/#/">
+                                    <img src="linkR.png" >
+                                </a>
+                            </div>                 
+                        </div>
+                        <div class="project__photo">
+                            <img src="restaurantProject.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__container" id="otherprojects">
+                <div class="content__container-project reveal">
+                    <h2>Other projects</h2>
+                    <div class="cards">
+                        <div class="text-card">
+                            <div class="text-card__overlay"></div>
+                            <div class="text-card__small-text">
+                                <h4>React to-do list</h4>
+                                A simple React app which you can create and save your to-do list. 
+                                Not only can you mark the tasks that have been completed, 
+                                but also remove them from the list no matter they are completed or not.
+                                <ul class="project__text__language">
+                                    <li>React</li>
+                                    <li>styled-components</li>
+                                </ul>
+                                <div class="project__external-link">
+                                    <a href="https://github.com/Pei-wen-code/reactodoproject">
+                                        <img src="githubR.png" >
+                                    </a>
+                                    <a href="https://pei-wen-code.github.io/reactodoproject/">
+                                        <img src="linkR.png" >
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="reacttodo.png">
+                        </div>
+
+                        <div class="text-card">
+                            <div class="text-card__overlay"></div>
+                            <div class="text-card__small-text">
+                                <h4>PHP message board</h4>
+                                This is a website where you have to login to leave your message. 
+                                Users can edit and delete their own message whereas admin can login to manage all users and posts.
+                                <ul class="project__text__language">
+                                    <li>PHP</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <div class="project__external-link">
+                                    <a href="https://github.com/Pei-wen-code/phpmessageboard">
+                                        <img src="githubR.png" >
+                                    </a>
+                                    <a href="http://mentor-program.co/mtr04group6/peipei/week11_hw1/index.php">
+                                        <img src="linkR.png" >
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="phpProject.png">
+                        </div>
+
+                        <div class="text-card">
+                            <div class="text-card__overlay"></div>
+                            <div class="text-card__small-text">
+                                <h4>Twitch live games</h4>
+                                By using Twitch API, this website allows you to see the current top 5 popular games on Twitch. 
+                                Click one of the games in the nav bar, the top 20 games screens of that game will be displayed.
+                                <ul class="project__text__language">
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <div class="project__external-link">
+                                    <a href="https://github.com/Pei-wen-code/twitchproject">
+                                        <img src="githubR.png" >
+                                    </a>
+                                    <a href="https://pei-wen-code.github.io/twitchproject/">
+                                        <img src="linkR.png" >
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="twitchProject.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content__container" id="contact">
+                <div class="reveal">
+                    <h2>Get in touch</h2>
+                    <p>I am currently looking for a right opportunity to work in an environment that will help me progress into a full-stack role. 
+                        If you would like to know more about what makes me tick, just...</p>
+                    <a href="mailto:contact@peiwenluobo.tw">Say hello!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const nav = document.querySelector("nav");
+    const logo = document.getElementById("logo");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 30 ) {
+            nav.classList.add("activeNav");
+            logo.src="logo_size_invert_contract.jpg";
+        } else {
+            nav.classList.remove("activeNav");
+            logo.src="logo_size_invert.jpg";
+        }
+    })
+
+    window.addEventListener("load", (event) => {
+        setTimeout(() => {
+            const hero = document.querySelector(".banner__hero");
+            hero.classList.add("fadeUp");
+        }, 2000);
+    });
+
+    const hamburger = document.querySelector(".hamburger");
+    const navbarList = document.querySelector(".navbar__list");
+    const blurFilter = document.querySelector(".hamburger__filter");
+    hamburger.addEventListener("click", () => {
+        navbarList.classList.toggle("hide");
+        if (navbarList.classList.contains("hide")) {
+            hamburger.classList.remove("open");
+            blurFilter.classList.remove("blureffect");
+        } else {
+            hamburger.classList.add("open");
+            blurFilter.classList.add("blureffect");
+        }
+    })
+
+    const socialMediaControl = document.querySelector(".socialmedia__control");
+    const socialMediaIcons = document.querySelectorAll(".socialmedia__icon");
+    window.addEventListener("resize", () => {
+        if (window.innerWidth <= 540) {
+            socialMediaControl.style.display = "inline-block";
+        } else {
+            socialMediaControl.style.display = "none";
+        }
+    })
+    socialMediaControl.addEventListener("click", () => {
+        socialMediaControl.classList.toggle("hide");
+
+        function controlIconsShow(cssString, socialMediaIcons) {
+            for (var i = 0 ; i < socialMediaIcons.length ; i ++ ) {
+
+                if (cssString === "none") {
+                    socialMediaIcons[i].style.display = cssString;
+                } else {
+                    socialMediaIcons[i].style.display = cssString;
+                }
+            }
+        }
+        socialMediaControl.classList.contains("hide") ? controlIconsShow("none", socialMediaIcons) : controlIconsShow("inline-block", socialMediaIcons);
+    })
+
+    window.addEventListener('scroll', reveal);
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+
+        for (var i =0; i < reveals.length; i++) {
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            revealtop < windowheight - revealpoint ? reveals[i].classList.add('active'): reveals[i].classList.remove('active');
+        }
+    }
+</script>
 </html>
