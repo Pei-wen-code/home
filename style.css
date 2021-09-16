@@ -685,6 +685,10 @@ li a:hover {
         transform: rotate(-45deg) translate(22px, 22px);
     }
 
+    .content__container {
+        height: 120vh;
+    }
+
     .text-card{
         height: 280px;
     }
@@ -700,7 +704,7 @@ li a:hover {
     }
 
     .content__container {
-        height: 110vh;
+        height: 130vh;
     }
 
     .main .content {
