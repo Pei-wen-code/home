@@ -556,6 +556,10 @@ li a:hover {
         flex-direction: column;
     }
 
+    .content__container {
+        height: 140vh;
+    }
+
     .text-card{
         margin-right: 0px;
         margin-bottom: 30px;
@@ -686,7 +690,7 @@ li a:hover {
     }
 
     .content__container {
-        height: 120vh;
+        height: 140vh;
     }
 
     .text-card{
@@ -704,7 +708,7 @@ li a:hover {
     }
 
     .content__container {
-        height: 130vh;
+        height: 120vh;
     }
 
     .main .content {
